@@ -1,0 +1,21 @@
+#include<stdio.h>
+void pn(int n)
+{
+   int i,s=0,n1=n;
+   for(i=1;i<=n/2;i++)
+   {
+       if(n%i==0)
+         s+=i;
+   }
+   if(s==n1)
+   printf("Number is perfect.\n");
+   else
+   printf("Number is not perfect.\n");
+}
+void main()
+{
+   int n;
+   printf("Enter a number:-\n");
+   scanf("%d",&n);
+   pn(n);
+}
